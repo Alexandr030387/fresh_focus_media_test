@@ -1,0 +1,124 @@
+.header
+    height: 50px
+    background-color: #e9ecef
+    border-bottom: solid 1px #6c757d
+
+.header h5
+    --bs-gutter-x: 1.5rem
+    --bs-gutter-y: 0
+    width: 100%
+    padding-right: calc(var(--bs-gutter-x) * 0.5)
+    padding-left: calc(var(--bs-gutter-x) * 0.5)
+    margin-right: auto
+    margin-left: auto
+    line-height: 50px
+    font-weight: bold
+
+@media (min-width: 576px)
+    .header h5
+        max-width: 540px
+
+@media (min-width: 768px)
+    .header h5
+        max-width: 720px
+
+@media (min-width: 992px)
+    .header h5
+        max-width: 960px
+
+@media (min-width: 1200px)
+    .header h5
+        max-width: 1140px
+
+@media (min-width: 1400px)
+    .header h5
+        max-width: 1320px
+
+
+.hero-block
+    margin-top: 24px
+    padding-bottom: 36px
+    border-bottom: solid 1px #e9ecef
+
+.hero-block h5
+    font-weight: bold
+
+.title
+    font-weight: bold
+
+.staff-row
+    margin-bottom: 5px
+
+.input, .select-input, .date-input
+    height: 30px
+
+.input input, .select-input div, .date-input .mx-datepicker
+    width: 100%
+    border-radius: 4px
+
+input
+    border: solid 1px #adb5bd
+
+.description-block, .labour-block, .truck-block, .miscellaneous-block
+    margin-top: 24px
+    padding-bottom: 36px
+    border-bottom: solid 1px #e9ecef
+
+.readonly input
+    background-color: #e9ecef !important
+
+.fa-circle-plus::before
+    background-color: #0dcaf0
+    color: #ffffff
+    border-radius: 100%
+    border: 0px solid #0dcaf0
+
+.fa-circle-xmark::before
+    background-color: #ffffff
+    color: #dc3545
+    border-radius: 50%
+    border: 0px solid #dc3545
+
+.sub-total-title
+    font-weight: bold
+
+.sub-total-value, .sub-total-title
+    margin-top: 5px
+    margin-bottom: 20px
+
+.sub-total-value input
+    float: right
+    width: 50%
+
+.select2-container .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__arrow
+    height: 37px !important
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+    line-height: 37px !important
+
+.action-icons
+    text-align: right
+
+.finish-button
+    text-align: right
+    margin: 20px
+
+.finish-button button
+    background-color: #6c757d
+    color: #ffffff
+    border-radius: 4px
+    padding: 10px 30px
+
+.is-warning
+    color: #b91c1c
+    background-color: #fee2e2
+    border: 1px solid #f87171
+    padding: 15px 30px
+    margin-top: 10px
+
+    .title
+        display: inline-block
+
+    .red-cross
+        display: inline-block
+        float: right

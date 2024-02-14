@@ -1,0 +1,38 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateTaskProjectsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('task_projects', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('task_id');
+            $table->string('status');
+            $table->string('order_by');
+            $table->string('area');
+            $table->date('date');
+            $table->bigInteger('customer_id');
+            $table->bigInteger('job_id');
+            $table->bigInteger('location_id');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('task_projects');
+    }
+}
