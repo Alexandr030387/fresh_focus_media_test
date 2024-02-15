@@ -7,9 +7,11 @@
 ## Launch the project
 * Set up docker `sudo apt install docker`
 * Set up docker-compose `sudo apt install docker-compose`
-* Run the container `sudo docker-compose up -d --build`
 * Go to the `laravel` dir `cd laravel`
 * In the `laravel` directory you will find the `.env.example` file, you should copy it and rename to `.env`.
+* Run the next command `php artisan key:generate`
+* In the `.env` file you can update your settings, for instance: ports
+* Run the container `sudo docker-compose up -d --build`
 * **After that you need to install next packages**:
   * `composer install` to download all necessary packages and dependencies
   * `npm install` to install all frontend dependencies
@@ -18,5 +20,5 @@
 * Or go to the container, 'laravel' dir `cd laravel` run the next command `sudo docker exec -it laravel-app bash`.
 * Inside container run migrations and seeds to create a new database. Go to the next steps.
 * `php artisan migrate`
-* `php artisan make:seeder` or `php artisan db:seed`
+* `php artisan db:seed`
 * If you set up all correct after you follow the instruction, you can run next command to launch the frontend `npm run watch` or `npm run dev`, check the url `http://localhost:8080`
